@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Market Data WebSocket</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div>
+        <label for="cryptoSelect">Select Cryptocurrency: </label>
+        <select id="cryptoSelect">
+            <option value="ethusdt">ETH/USDT</option>
+            <option value="bnbusdt">BNB/USDT</option>
+            <option value="dotusdt">DOT/USDT</option>
+        </select>
+
+        <label for="timeInterval">Select Interval: </label>
+        <select id="timeInterval">
+            <option value="1m">1 Minute</option>
+            <option value="3m">3 Minute</option>
+            <option value="5m">5 Minute</option>
+        </select>
+    </div>
+    <canvas id="cryptoChart"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
